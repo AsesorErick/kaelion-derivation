@@ -1,6 +1,6 @@
-# Kaelion Derivation v2.2
+# Kaelion Derivation v2.3
 
-**Complete Theoretical Foundation with Robustness, Uniqueness, and Experimental Procedures**
+**Complete Theoretical Foundation with No-Go Theorem and Holographic Equivalence**
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18245761.svg)](https://doi.org/10.5281/zenodo.18245761)
 
@@ -13,7 +13,8 @@ This repository provides the **complete theoretical foundation** for the Kaelion
 - Connection to mainstream physics (SYK, JT gravity)
 - Robustness and uniqueness theorems
 - Operational procedures for measurement
-- Extension to λ as a field
+- **No-Go theorem: λ is necessary**
+- **Equivalence with entanglement wedge**
 
 ---
 
@@ -37,55 +38,38 @@ This repository provides the **complete theoretical foundation** for the Kaelion
 | 33 | Procedure Z (how to measure λ) | 6/6 | ✓ |
 | 34 | λ as field: λ(r), λ(k), λ(x) | 6/6 | ✓ |
 | 35 | Uniqueness theorem | 5/6 | ✓ |
+| **36** | **No-Go theorem** | **5/6** | ✓ |
+| **37** | **Entanglement wedge equivalence** | **6/6** | ✓ |
 
-**Total: 55/60 tests (91.7%)**
+**Total: 66/72 tests (91.7%)**
 
 ---
 
-## What's New in v2.2
+## What's New in v2.3
 
-### Module 32: Robustness
-- α(λ) = -0.5 - λ is **stable** under perturbations
-- Linear form protected by symmetry and thermodynamics
-- GSL preserved under all tested perturbations
+### Module 36: No-Go Theorem
+**λ is NECESSARY, not optional:**
+- Fixed α violates GSL during black hole evaporation
+- Only varying α(λ) satisfies all constraints
+- Kaelion is a requirement, not a choice
 
-### Module 33: Procedure Z
-Three operational ways to measure λ:
-1. **Z1**: Entropy slope → α → λ
-2. **Z2**: OTOC decay → Lyapunov → λ  
-3. **Z3**: Scrambling time → λ
-
-All give consistent results!
-
-### Module 34: λ as Field
-- **λ(r)**: Radial dependence (horizon → bulk)
-- **λ(k)**: Momentum/RG flow (UV → IR)
-- **λ(x,y)**: Spatial distribution
-
-### Module 35: Uniqueness Theorem
-Any monotonic interpolation between LQG and holography
-that preserves GSL is **equivalent** to Kaelion via reparametrization.
+### Module 37: Entanglement Wedge Equivalence
+**λ has direct holographic meaning:**
+- λ = Vol(Entanglement Wedge) / Vol(Bulk)
+- Connects to Ryu-Takayanagi, JLMS
+- λ = degree of bulk accessibility from boundary
 
 ---
 
 ## Key Results Summary
 
 ```
-DERIVED (not fitted):
-  α(λ) = -0.5 - λ
-
-ROBUST:
-  Stable under ε < 0.1 perturbations
-  Protected by symmetry
-
-UNIQUE:
-  Only monotonic interpolation satisfying GSL
-
-MEASURABLE:
-  Three independent procedures give same λ
-
-EXTENDED:
-  λ can be a local field λ(x,r,k)
+DERIVED:     α(λ) = -0.5 - λ (from tensor networks, QEC)
+ROBUST:      Stable under perturbations
+UNIQUE:      Only monotonic interpolation satisfying GSL
+NECESSARY:   No-Go theorem proves λ must exist
+HOLOGRAPHIC: λ ≡ Entanglement wedge fraction
+MEASURABLE:  Three independent procedures
 ```
 
 ---
@@ -104,10 +88,12 @@ kaelion-derivation/
 ├── module33_procedure_z.py         # Measurement procedures
 ├── module34_lambda_field.py        # λ(r), λ(k), λ(x)
 ├── module35_uniqueness.py          # Uniqueness theorem
+├── module36_nogo_theorem.py        # No-Go theorem
+├── module37_wedge_equivalence.py   # Holographic equivalence
 ├── paper/
 │   ├── kaelion_paper.tex
 │   └── kaelion_paper.pdf
-└── figures/                        # 10 visualization PNGs
+└── figures/                        # 12 visualization PNGs
 ```
 
 ---
@@ -119,7 +105,7 @@ git clone https://github.com/AsesorErick/kaelion-derivation.git
 cd kaelion-derivation
 
 # Run all modules
-for i in {26..35}; do python3 module${i}_*.py; done
+for i in {26..37}; do python3 module${i}_*.py; done
 ```
 
 ---
@@ -129,7 +115,7 @@ for i in {26..35}; do python3 module${i}_*.py; done
 ```bibtex
 @software{perez_kaelion_derivation_2026,
   author = {Pérez Eugenio, Erick Francisco},
-  title = {Kaelion Derivation v2.2: Complete Theoretical Foundation},
+  title = {Kaelion Derivation v2.3: Complete Theoretical Foundation},
   year = {2026},
   publisher = {Zenodo},
   doi = {10.5281/zenodo.18245761}
