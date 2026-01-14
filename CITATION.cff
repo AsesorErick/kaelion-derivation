@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this derivation, please cite it as below."
+authors:
+  - family-names: "Pérez Eugenio"
+    given-names: "Erick Francisco"
+title: "Kaelion Derivation: Theoretical Foundation from Tensor Networks and QEC"
+version: 1.0.0
+date-released: 2026-01-14
+url: "https://github.com/AsesorErick/kaelion-derivation"
