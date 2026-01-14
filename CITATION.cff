@@ -4,6 +4,7 @@ authors:
   - family-names: "Pérez Eugenio"
     given-names: "Erick Francisco"
 title: "Kaelion Derivation: Complete Theoretical Foundation"
-version: 2.2.0
-date-released: 2026-01-14
+version: 2.2.1
+doi: 10.5281/zenodo.18245761
+date-released: 2026-01-15
 url: "https://github.com/AsesorErick/kaelion-derivation"
