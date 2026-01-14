@@ -1,6 +1,6 @@
-# Kaelion Derivation v2.1
+# Kaelion Derivation v2.2
 
-**Theoretical Foundation, Mainstream Connections, and Experimental Predictions**
+**Complete Theoretical Foundation with Robustness, Uniqueness, and Experimental Procedures**
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.PENDING.svg)](https://doi.org/10.5281/zenodo.PENDING)
 
@@ -8,7 +8,12 @@
 
 ## Overview
 
-This repository provides the complete theoretical foundation for the Kaelion correspondence, connecting it to mainstream holography research (SYK, JT gravity) and proposing falsifiable experimental tests.
+This repository provides the **complete theoretical foundation** for the Kaelion correspondence, including:
+- Derivation of λ from first principles
+- Connection to mainstream physics (SYK, JT gravity)
+- Robustness and uniqueness theorems
+- Operational procedures for measurement
+- Extension to λ as a field
 
 ---
 
@@ -18,71 +23,70 @@ This repository provides the complete theoretical foundation for the Kaelion cor
 
 ---
 
-## What's in v2.1
+## Module Summary
 
-| Module | Content | Tests |
-|--------|---------|-------|
-| 26 | Tensor network derivation | 6/6 ✓ |
-| 27 | Holographic QEC derivation | 6/6 ✓ |
-| 28 | Analog experiments (BEC, circuits) | 5/6 ✓ |
-| 29 | Formal action framework | 5/6 ✓ |
-| **30** | **SYK model connection** | **6/6 ✓** |
-| **31** | **JT gravity (exact 2D)** | **4/6 ✓** |
+| Module | Content | Tests | Status |
+|--------|---------|-------|--------|
+| 26 | Tensor network derivation | 6/6 | ✓ |
+| 27 | Holographic QEC derivation | 6/6 | ✓ |
+| 28 | Analog experiments | 5/6 | ✓ |
+| 29 | Formal action framework | 5/6 | ✓ |
+| 30 | SYK model connection | 6/6 | ✓ |
+| 31 | JT gravity (exact 2D) | 4/6 | ✓ |
+| **32** | **Robustness under perturbations** | **6/6** | ✓ |
+| **33** | **Procedure Z (how to measure λ)** | **6/6** | ✓ |
+| **34** | **λ as field: λ(r), λ(k), λ(x)** | **6/6** | ✓ |
+| **35** | **Uniqueness theorem** | **5/6** | ✓ |
 
-**Total: 32/36 tests (88.9%)**
-
----
-
-## Key Results
-
-### 1. Lambda Derivation (Modules 26-27)
-```
-α(λ) = -0.5 - λ  DERIVED from:
-  • Tensor network coarse-graining
-  • Holographic quantum error correction
-```
-
-### 2. SYK Connection (Module 30)
-```
-SYK model:
-  • Saturates MSS bound: λ_L = 2πT
-  • This corresponds to λ_Kaelion = 1
-  • Therefore α = -1.5 (holographic limit)
-
-Key insight: Chaos saturation = Holographic-ness
-```
-
-### 3. JT Gravity (Module 31)
-```
-Exact 2D formula:
-  S = S_0 + 2π·φ_h + α(λ)·log(φ_h)
-  
-  • First exactly solvable Kaelion model
-  • Dual to SYK via AdS2/CFT1
-  • Confirms α(λ) = -0.5 - λ analytically
-```
-
-### 4. Experimental Predictions (Module 28)
-```
-BEC sonic black holes:
-  • α transitions -0.5 → -1.5
-  • Measurable with current technology
-
-Superconducting circuits:
-  • OTOC decay 2x faster at λ=1
-  • Page curve shift ~5%
-```
+**Total: 55/60 tests (91.7%)**
 
 ---
 
-## Why This Matters
+## What's New in v2.2
 
-| Before (v3.1) | After (v2.1) |
-|---------------|--------------|
-| α(λ) phenomenological | α(λ) derived |
-| Disconnected from mainstream | Connected to SYK, JT |
-| No exact model | Exactly solvable in 2D |
-| General predictions | Specific falsifiable tests |
+### Module 32: Robustness
+- α(λ) = -0.5 - λ is **stable** under perturbations
+- Linear form protected by symmetry and thermodynamics
+- GSL preserved under all tested perturbations
+
+### Module 33: Procedure Z
+Three operational ways to measure λ:
+1. **Z1**: Entropy slope → α → λ
+2. **Z2**: OTOC decay → Lyapunov → λ  
+3. **Z3**: Scrambling time → λ
+
+All give consistent results!
+
+### Module 34: λ as Field
+- **λ(r)**: Radial dependence (horizon → bulk)
+- **λ(k)**: Momentum/RG flow (UV → IR)
+- **λ(x,y)**: Spatial distribution
+
+### Module 35: Uniqueness Theorem
+Any monotonic interpolation between LQG and holography
+that preserves GSL is **equivalent** to Kaelion via reparametrization.
+
+---
+
+## Key Results Summary
+
+```
+DERIVED (not fitted):
+  α(λ) = -0.5 - λ
+
+ROBUST:
+  Stable under ε < 0.1 perturbations
+  Protected by symmetry
+
+UNIQUE:
+  Only monotonic interpolation satisfying GSL
+
+MEASURABLE:
+  Three independent procedures give same λ
+
+EXTENDED:
+  λ can be a local field λ(x,r,k)
+```
 
 ---
 
@@ -95,12 +99,15 @@ kaelion-derivation/
 ├── module28_analog_experiment.py   # BEC & circuits
 ├── module29_formal_action.py       # Action framework
 ├── module30_syk.py                 # SYK model
-├── module31_jt_gravity.py          # JT gravity (2D)
-├── DERIVATION_PAPER.md             # Theory paper
+├── module31_jt_gravity.py          # JT gravity
+├── module32_robustness.py          # Perturbative stability
+├── module33_procedure_z.py         # Measurement procedures
+├── module34_lambda_field.py        # λ(r), λ(k), λ(x)
+├── module35_uniqueness.py          # Uniqueness theorem
 ├── paper/
-│   ├── kaelion_paper.tex           # LaTeX source
-│   └── kaelion_paper.pdf           # Compiled (6 pages)
-└── figures/                        # Visualizations
+│   ├── kaelion_paper.tex
+│   └── kaelion_paper.pdf
+└── figures/                        # 10 visualization PNGs
 ```
 
 ---
@@ -112,12 +119,7 @@ git clone https://github.com/AsesorErick/kaelion-derivation.git
 cd kaelion-derivation
 
 # Run all modules
-python3 module26_lambda_derivation.py  # Tensor networks
-python3 module27_qec_lambda.py          # QEC
-python3 module28_analog_experiment.py   # Experiments
-python3 module29_formal_action.py       # Action
-python3 module30_syk.py                 # SYK
-python3 module31_jt_gravity.py          # JT gravity
+for i in {26..35}; do python3 module${i}_*.py; done
 ```
 
 ---
@@ -127,24 +129,12 @@ python3 module31_jt_gravity.py          # JT gravity
 ```bibtex
 @software{perez_kaelion_derivation_2026,
   author = {Pérez Eugenio, Erick Francisco},
-  title = {Kaelion Derivation v2.1: SYK, JT Gravity, and Experiments},
+  title = {Kaelion Derivation v2.2: Complete Theoretical Foundation},
   year = {2026},
   publisher = {Zenodo},
   doi = {10.5281/zenodo.PENDING}
 }
 ```
-
----
-
-## References
-
-Key papers connected to this work:
-
-1. **Sachdev-Ye (1993), Kitaev (2015)**: SYK model
-2. **Maldacena-Stanford (2016)**: SYK and AdS2
-3. **Jackiw (1985), Teitelboim (1983)**: JT gravity
-4. **Saad-Shenker-Stanford (2019)**: JT gravity path integral
-5. **Steinhauer (2016)**: BEC Hawking radiation
 
 ---
 

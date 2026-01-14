@@ -3,7 +3,7 @@ message: "If you use this derivation, please cite it as below."
 authors:
   - family-names: "Pérez Eugenio"
     given-names: "Erick Francisco"
-title: "Kaelion Derivation: Theory, SYK, JT Gravity, and Experiments"
-version: 2.1.0
+title: "Kaelion Derivation: Complete Theoretical Foundation"
+version: 2.2.0
 date-released: 2026-01-14
 url: "https://github.com/AsesorErick/kaelion-derivation"
