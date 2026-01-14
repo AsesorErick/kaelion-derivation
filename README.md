@@ -2,7 +2,7 @@
 
 **Complete Theoretical Foundation with Robustness, Uniqueness, and Experimental Procedures**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.PENDING.svg)](https://doi.org/10.5281/zenodo.PENDING)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18245761.svg)](https://doi.org/10.5281/zenodo.18245761)
 
 ---
 
@@ -19,7 +19,7 @@ This repository provides the **complete theoretical foundation** for the Kaelion
 
 ## Related Work
 
-📦 **Main model:** [kaelion](https://github.com/AsesorErick/kaelion) - DOI: [10.5281/zenodo.18237393](https://doi.org/10.5281/zenodo.18237393)
+📦 **Main model:** [kaelion](https://github.com/AsesorErick/kaelion) - DOI: [10.5281/zenodo.18238030](https://doi.org/10.5281/zenodo.18238030)
 
 ---
 
@@ -33,10 +33,10 @@ This repository provides the **complete theoretical foundation** for the Kaelion
 | 29 | Formal action framework | 5/6 | ✓ |
 | 30 | SYK model connection | 6/6 | ✓ |
 | 31 | JT gravity (exact 2D) | 4/6 | ✓ |
-| **32** | **Robustness under perturbations** | **6/6** | ✓ |
-| **33** | **Procedure Z (how to measure λ)** | **6/6** | ✓ |
-| **34** | **λ as field: λ(r), λ(k), λ(x)** | **6/6** | ✓ |
-| **35** | **Uniqueness theorem** | **5/6** | ✓ |
+| 32 | Robustness under perturbations | 6/6 | ✓ |
+| 33 | Procedure Z (how to measure λ) | 6/6 | ✓ |
+| 34 | λ as field: λ(r), λ(k), λ(x) | 6/6 | ✓ |
+| 35 | Uniqueness theorem | 5/6 | ✓ |
 
 **Total: 55/60 tests (91.7%)**
 
@@ -132,7 +132,7 @@ for i in {26..35}; do python3 module${i}_*.py; done
   title = {Kaelion Derivation v2.2: Complete Theoretical Foundation},
   year = {2026},
   publisher = {Zenodo},
-  doi = {10.5281/zenodo.PENDING}
+  doi = {10.5281/zenodo.18245761}
 }
 ```
 
