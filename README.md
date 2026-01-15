@@ -118,7 +118,7 @@ for i in {26..37}; do python3 module${i}_*.py; done
   title = {Kaelion Derivation v2.3: Complete Theoretical Foundation},
   year = {2026},
   publisher = {Zenodo},
-  doi = {10.5281/zenodo.18245761}
+  doi = {10.5281/zenodo.18248746}
 }
 ```
 
