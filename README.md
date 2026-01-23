@@ -15,7 +15,7 @@ This repository provides the **complete theoretical foundation** for the Kaelion
 - Operational procedures for measurement
 - No-Go theorem: λ is necessary
 - Equivalence with entanglement wedge
-- **NEW: Experimental confirmation with 74+ IBM Quantum data points**
+- **NEW: Experimental confirmation with 136+ IBM Quantum data points**
 
 ---
 
@@ -23,7 +23,7 @@ This repository provides the **complete theoretical foundation** for the Kaelion
 
 | Result | Value | Significance |
 |--------|-------|--------------|
-| Total data points | 74+ | p < 10⁻¹⁰ |
+| Total data points | 136+ | p < 10⁻¹⁰ |
 | Universality | Error = 0 | 5 Hamiltonian families |
 | LQG regime | λ = 0.245 | First λ < 0.3 on hardware |
 | Spatial gradient | r = 0.932 | Strong correlation |
@@ -32,13 +32,39 @@ This repository provides the **complete theoretical foundation** for the Kaelion
 
 ---
 
-## Related Work
+## Module 38: Experimental Confirmation
 
-📦 **Main model:** [kaelion v4.0](https://github.com/AsesorErick/kaelion) - DOI: [10.5281/zenodo.18344067](https://doi.org/10.5281/zenodo.18344067)
+Module 38 documents the experimental verification of α(λ) = -0.5 - λ.
 
-🔬 **Experiments:** [kaelion-experiments v3.1](https://github.com/AsesorErick/kaelion-experiments) - DOI: [10.5281/zenodo.18344903](https://doi.org/10.5281/zenodo.18344903)
+**Note:** Complete experimental data with all Job IDs is maintained in:
+→ [kaelion-experiments/data/EXPERIMENTAL_DATA_MASTER.json](https://github.com/AsesorErick/kaelion-experiments/blob/main/data/EXPERIMENTAL_DATA_MASTER.json)
 
-🔧 **Formal verification:** [kaelion-formal](https://github.com/AsesorErick/kaelion-formal) - DOI: [10.5281/zenodo.18250888](https://doi.org/10.5281/zenodo.18250888)
+### Summary from Module 38:
+
+| Test | Result |
+|------|--------|
+| Universality (5 Hamiltonians) | Error = 0 |
+| LQG Region Detection | λ = 0.245 at J=0 |
+| Spatial Gradient | Correlation = 0.932 |
+| Statistical Significance | p < 10⁻¹⁰ |
+
+### Data Points:
+- **136+ total points** across all experiments
+- **3 IBM Quantum backends** (ibm_fez, ibm_torino, ibm_marrakesh)
+- **Full λ range** [0.006, 1.000]
+
+For raw data and Job IDs: See [kaelion-experiments](https://github.com/AsesorErick/kaelion-experiments)
+
+---
+
+## Related Repositories
+
+| Repository | Description |
+|------------|-------------|
+| [kaelion](https://github.com/AsesorErick/kaelion) | Main model (25 modules) |
+| **kaelion-derivation** (this) | Theoretical derivations (Modules 26-38) |
+| [kaelion-experiments](https://github.com/AsesorErick/kaelion-experiments) | **Complete experimental data (136+ points)** |
+| [kaelion-formal](https://github.com/AsesorErick/kaelion-formal) | Formal verification |
 
 ---
 
@@ -73,7 +99,7 @@ UNIQUE:       Only monotonic interpolation satisfying GSL
 NECESSARY:    No-Go theorem proves λ must exist
 HOLOGRAPHIC:  λ ≡ Entanglement wedge fraction
 MEASURABLE:   Three independent procedures
-CONFIRMED:    74+ data points, p < 10⁻¹⁰  ← NEW
+CONFIRMED:    136+ data points, p < 10⁻¹⁰  ← NEW
 ```
 
 ---
